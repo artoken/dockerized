@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  ganache_artoken:
+    build:
+      context: ./ganache
+    ports:
+      - "8545:8545"
+    volumes:
+      - ./ganache_db:/ganache_db
+    networks:
+      - auctions_node
+  
+  admin_side:
+    build:
+      context: ./admin_side_container
+    networks:
+      - auctions_node
+    ports:
+      - "8000:8000"
+  client_side_all_tokens:
+    build:
+      context: ./client_side_all_tokens_django
+    networks:
+      - auctions_node
+    ports:
+      - "8001:8001"
+
+  nginx_front:
+    build: 
+      context: ./client_side
+    networks:
+      - auctions_node
+    ports:
+      - "80:80"
+
+networks:
+  auctions_node:
