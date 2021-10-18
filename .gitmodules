@@ -1,0 +1,15 @@
+[submodule "client_side/client_auctions_and_deploy"]
+	path = client_side/client_auctions_and_deploy
+	url = ssh://git@github.com/artoken/client_auctions_and_deploy
+[submodule "ganache/contracts"]
+	path = ganache/contracts
+	url = ssh://git@github.com/artoken/contracts
+[submodule "admin_side_container/admin_side"]
+	path = admin_side_container/admin_side
+	url = ssh://git@github.com/artoken/admin_side
+[submodule "ganache/contracts_src"]
+	path = ganache/contracts_src
+	url = ssh://git@github.com/artoken/contracts
+[submodule "client_side_all_tokens_django/Client_side_all_tokens_django"]
+	path = client_side_all_tokens_django/Client_side_all_tokens_django
+	url = ssh://git@github.com/artoken/Client_side_all_tokens_django
