@@ -33,6 +33,7 @@ services:
       - auctions_node
     ports:
       - "80:80"
+      - "443:443"
 
 networks:
   auctions_node:
