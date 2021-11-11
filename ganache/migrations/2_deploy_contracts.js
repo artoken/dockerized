@@ -1,4 +1,4 @@
-var ART_TOKEN = artifacts.require("./ART_CONTRACT.sol");
+var ART_TOKEN = artifacts.require("./Diamond.sol");
 var AuctionBox = artifacts.require("./AuctionBox.sol");
 
 module.exports = async function(deployer) {
